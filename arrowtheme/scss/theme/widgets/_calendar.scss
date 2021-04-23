@@ -1,0 +1,15 @@
+.widget_calendar {
+	#wp-calendar {
+		width: 100%;
+		text-align: center;
+
+		th {
+			text-align: center;
+		}
+
+		#today {
+			background: $highlight_color;
+			color: #fff;
+		}
+	}
+}

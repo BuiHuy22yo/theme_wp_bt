@@ -1,0 +1,21 @@
+.gssiacs-pagination {
+	text-align: center;
+	font-size: 18px;
+	font-family: $body_font;
+	margin-bottom: 30px;
+
+	a {
+		color: $highlight_color;
+		padding: 0 5px;
+
+		&:hover {
+			color: $theme_color;
+		}
+	}
+
+	span {
+		color: #323232;
+		padding: 0 5px;
+	}
+}
+

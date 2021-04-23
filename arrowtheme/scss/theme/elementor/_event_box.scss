@@ -1,0 +1,37 @@
+.elementor-container{
+  .elementor-column.elementor-col-50.elementor-top-column.elementor-element {
+    width: 100%;
+  }
+  .event-box-content {
+    border-top: 1px solid bisque;
+  }
+  .event-box-top {
+    height: 78px;
+  }
+  .event-box-image {
+    margin: 10px 0 10px 0;
+  }
+  .row.event-box-bot-link {
+    position: absolute;
+    bottom: 40px;
+  }
+  .row.event-box-bot-link a{
+    color: #014d93;
+  }
+
+  button.btn.btn-outline-primary.event-box-button {
+    background-color: #e0eaf2;
+    border-radius: 50px;
+    border: 1px solid #014d93;
+    color: #014d93;
+    padding: 6px 20.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .col.link-view-project {
+    padding: 6px 50.5px;
+  }
+}

@@ -1,0 +1,46 @@
+.gssiacs-elementor-gallery {
+	.bar-list {
+		margin: 0;
+		padding: 0;
+		margin-bottom: 30px;
+		text-align: center;
+
+		li {
+			list-style: none;
+			display: inline-block;
+			font-size: 12px;
+			letter-spacing: 1.2px;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin: 0 10px;
+			cursor: pointer;
+
+			&:hover,
+			&.active {
+				color: $highlight_color;
+			}
+		}
+	}
+
+	.content-list {
+		.item-gallery {
+			opacity: 0;
+			visibility: hidden;
+			display: none;
+			transition: opacity .3s ease-out, visibility .3s ease-out, top .3s ease-out, bottom .3s ease-out;
+			margin: 0 -10px;
+
+			&.active {
+				opacity: 1;
+				display: block;
+				visibility: visible;
+			}
+
+			.masonry-item {
+				.im {
+					margin: 10px;
+				}
+			}
+		}
+	}
+}

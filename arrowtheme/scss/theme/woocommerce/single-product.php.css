@@ -1,0 +1,232 @@
+.woocommerce div.product {
+    padding: 30px 0;
+}
+
+.woocommerce-page #content div.product div.summary {
+    float: none;
+    width: 83.4%;
+    margin: auto;
+    text-align: center;
+}
+
+.woocommerce div.product .product_title {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 45px;
+    color: #303030;
+    margin-bottom: 24px;
+}
+
+.woocommerce-product-details__short-description {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 34px;
+    color: #707070;
+}
+
+.woocommerce-page #content div.product div.images
+{
+    float: none;
+    width: 76.05%;
+    margin:4.17vw auto;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+    display: none;
+}
+.woocommerce .button button.button.alt {
+    background-color: transparent;
+}
+
+.woocommerce div.product form.cart {
+    margin-bottom: 0;
+}
+
+.woocommerce .button button.button {
+    padding: 0;
+}
+
+.button-link , .woocommerce .button button.button.alt {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-transform :uppercase;
+    width: 100%;
+}
+
+.button-single {
+    text-align: center;
+}
+.button span {
+    font-weight: 300;
+}
+.button {
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.padding_view {
+    padding: 18px 29.5px;
+
+}
+.padding_download {
+    padding: 18px 23.5px;
+}
+
+.padding_buy {
+    padding: 16.5px 24px;
+}
+.bg-single-product-footer {
+    background: #303030;
+}
+.single-product .site-content {
+    margin-bottom: 0;
+}
+.single-product-footer {
+    text-align: center;
+    padding: 4.167vw 0;
+}
+.text-option {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 67px;
+    color: #FFFFFF;
+    margin-bottom: 1.823vw;
+}
+.btn {
+    padding: 16px 0;
+    margin-bottom: 4.17vw;
+}
+
+.btn button.button.alt{
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #2C2C2C;
+    padding: 16px 28px;
+    background: #fff;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.btn-group {
+    padding: 1.4vw 1.5625vw 1.3vw 1.5625vw;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+    margin: 0 2.08vw;
+}
+.btn-link {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #707070;
+}
+.fas, .fab {
+    font-size: 45px;
+
+}
+.ellipse span {
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+    line-height: 37px;
+    position: absolute;
+    top: 49px;
+    left: 34px;
+}
+.ellipse {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 135px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    background: #82B440;
+    max-width: 192px;
+    border-radius: 50%;
+    padding: 28.5px 0;
+    position: relative;
+    opacity: 1;
+}
+.ellipse1 {
+    max-width: 258px;
+    padding: 33px;
+    /*opacity: 0.1;*/
+    background: rgba(130,180,64,0.1);
+    border-radius: 50%;
+}
+.ellipse2 {
+    max-width: 318px;
+    padding: 30px;
+    background: rgba(130, 180, 64, 0.05);
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 3.85vw;
+}
+.button-group {
+    display: flex;
+}
+@media  (max-width: 1210px){
+    .button-group {
+        display: block;
+    }
+    .btn-group {
+        width: 52%;
+        margin: auto;
+    }
+    .btn-group {
+        margin-bottom: 15px;
+    }
+}
+
+@media  (max-width: 991px){
+
+}
+
+@media  (max-width: 767px){
+    .button {
+        width: 51%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .btn-group {
+        width: 70%;
+        /*margin: auto;*/
+    }
+}
+@media  (max-width: 575px){
+    .btn-group {
+        width: 100%;
+        /*margin: auto;*/
+    }
+
+}
+
+@media  (max-width: 480px){
+    .button {
+        width: 61%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .btn-link {
+        font-size: 20px;
+    }
+    .text-option {
+        font-size: 30px;
+        line-height: 50px;
+    }
+}

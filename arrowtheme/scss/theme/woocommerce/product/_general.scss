@@ -1,0 +1,32 @@
+.single-product {
+	.product-top {
+		.product-inner {
+			display: flex;
+		}
+
+		.product-top-left {
+			max-width: 60%;
+
+			.onsale {
+				position: absolute;
+				font-size: 28px;
+				color: #fff;
+				background: $highlight_color;
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				z-index: 1;
+				left: 180px;
+				top: 10px;
+				text-align: center;
+				line-height: 60px;
+				font-family: $highlight_font;
+			}
+		}
+
+		.product-top-right {
+			margin-left: 30px;
+		}
+	}
+}
+

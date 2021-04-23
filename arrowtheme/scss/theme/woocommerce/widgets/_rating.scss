@@ -1,0 +1,24 @@
+.widget_rating_filter ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none outside;
+
+	li {
+		clear: bottom;
+		padding: 0 0 1px;
+		list-style: none;
+
+		a {
+			padding: 1px 0;
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+		}
+
+		.star-rating {
+			margin: 0;
+			margin-right: 5px;
+		}
+	}
+}

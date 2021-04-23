@@ -1,0 +1,53 @@
+
+.gssiacs-elementor-blog {
+	.item-content {
+		background: #fff;
+		.item-cat {
+			a {
+				@include font-family-face('Roboto',500,1.29,16px);
+				letter-spacing: 3.12px;
+				color: $color-link-icon;
+			}
+		}
+
+		.item-title {
+			@include font-family-face('Lato','bold',1.4,20px);
+			margin-top: 5px;
+			letter-spacing: 1.3px;
+		}
+
+		.item-date {
+			@include font-family-face('Roboto',100,1.43,14px);
+			letter-spacing: 1px;
+			margin-bottom: 5px;
+		}
+
+		.item-button {
+			margin-top: 10px;
+			letter-spacing: 1.4px;
+			font-weight: bold;
+			text-transform: uppercase;
+
+			a {
+				position: relative;
+
+				&:after {
+					position: absolute;
+					content: '';
+					bottom: 0;
+					left: 0;
+					width: 0;
+					transition: all 0.3s ease-in;
+					height: 2px;
+					background: $highlight_color;
+				}
+
+				&:hover {
+					&:after {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,116 @@
+$border_color		:		#2b3769;
+$link_color			: 		#2b3769;
+$link_color_hover	: 		#00284d;
+$a_learnmore_hover	: 		#00284d;
+
+$theme_color		: 		#2b3769;
+$highlight_color	: 		#f9a392;
+
+$black_color		: 		#000;
+$black_2_color		: 		#2a2d2c;
+
+$body_font			:		'Nunito';
+$heading_font		:		'PT Serif Caption';
+$highlight_font		:		'Mr De Haviland';
+
+$blue_bar_color		        :		#014d93;
+$red_top_bar_color	        :		#e21936;
+$tint_box_background_color	: 		#013463;
+$white_color                :       #ffffff;
+$red_top                    :       #e21936;
+$blue_hover                 :       #014d93;
+$color_black                :       #000000;
+$color_text_footer          :       #a5a5a5;
+$text-color-white: #fff;
+$text-color-black: #000;
+$color-link-icon: #014d93;
+$color-download: #e21936;
+$color-background-tint: #6794be;
+$mainmenu_color: #333;
+
+@mixin font-family-mixin($font-family, $font-weight, $line-height) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+@mixin font-family-face ($fontf,$fontw,$fonth,$fonts){
+    font-family: $fontf;
+    font-weight: $fontw;
+    line-height: $fonth;
+    font-size: $fonts;;
+}
+.container-sub{
+    width: 1180px;
+    margin: 0 auto;
+}
+@mixin h1-title {
+    font-family: Lato;
+    font-size: 50px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.28;
+    letter-spacing: 0.75px;
+    text-align: left;
+    color: $color_black;
+}
+@mixin h4-path-title{
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.36px;
+    text-align: left;
+    color: $color_black;
+}
+@mixin body-p{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: 0.27px;
+}
+@mixin body-a-move{
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.27px;
+}
+@mixin body-font-small{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: 1.12px;
+    color: $blue_bar_color;
+}
+@mixin body-title-20{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    text-align: left;;
+    color: $color_black;
+}
+@mixin body-date-post{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 0.21px;
+    text-align: left;
+    color: $color_black;
+}

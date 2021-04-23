@@ -1,0 +1,27 @@
+.gssiacs-has-transparent {
+	.gssiacs-topbar {
+		position: absolute;
+		top: 0;
+		background: transparent;
+		z-index: 999;
+		width: 100%;
+	}
+
+	.gssiacs-header {
+		background: transparent;
+		position: absolute;
+		z-index: 999;
+		width: 100%;
+		//border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+	}
+
+	#gssiacs-site-logo {
+		.gssiacs-logo-transparent {
+			display: block;
+		}
+
+		.gssiacs-logo {
+			display: none;
+		}
+	}
+}

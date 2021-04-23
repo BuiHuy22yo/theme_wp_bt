@@ -1,0 +1,24 @@
+.widget_rss {
+	ul {
+		li {
+			text-transform: none;
+			letter-spacing: normal;
+			font-size: 14px;
+			margin-bottom: 5px;
+			border-bottom: 1px solid #ddd;
+			padding-bottom: 5px;
+
+			.rsswidget {
+				color: $link_color;
+
+				&:hover {
+					color: $link_color_hover;
+				}
+			}
+
+			.rss-date {
+				font-style: italic;
+			}
+		}
+	}
+}

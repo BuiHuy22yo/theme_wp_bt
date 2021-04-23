@@ -1,0 +1,22 @@
+.product-image-wrapper {
+	position: relative;
+
+	.secondary-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+
+	&:hover {
+		.secondary-image {
+			display: block;
+		}
+	}
+}
+
+.woocommerce-page {
+	.site-content {
+		margin-bottom: 30px;
+	}
+}

@@ -1,0 +1,16 @@
+.gssiacs-header-btn {
+	display: flex;
+
+	> div {
+		margin-right: 25px;
+		color: $black_2_color;
+		font-size: 12px;
+		letter-spacing: 1.2px;
+		text-transform: uppercase;
+		cursor: pointer;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

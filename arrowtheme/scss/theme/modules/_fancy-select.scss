@@ -1,0 +1,161 @@
+$fancy-select-arrow-color:			#4b5468;
+$fancy-select-arrow-hover-color:	#7a8498;
+$fancy-select-options-bg:			$theme_color;
+
+.gssiacs-select {
+	display: none;
+}
+
+.amyui-fancy-select {
+	position: relative;
+
+	.fs-disabled {
+		opacity: .5;
+	}
+
+	select:focus + .fs-trigger {
+
+	}
+
+	.fs-trigger {
+		cursor: pointer;
+		display: block;
+		width: 100%;
+		padding: 10px 40px 10px 20px;
+		font-size: 13px;
+		font-style: italic;
+		color: #9a9a9a;
+		background-color: #F4F4F4;
+		transition: all .2s ease-out;
+		min-width: 180px;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 0;
+			height: 0;
+			border: 5px solid transparent;
+			border-top-color: #9a9a9a;
+			top: 20px;
+			right: 10px;
+		}
+
+		&.input-rounded {
+			border-radius: 20px;
+			padding-left: 5px;
+			padding-right: 40px;
+
+			&:after {
+				right: 20px;
+			}
+
+		}
+
+		&.fs-open {
+			&:after {
+				border-top-color: transparent;
+				border-bottom-color: #9a9a9a;
+				top: 16px;
+			}
+
+		}
+	}
+
+	ul.fs-options {
+		list-style: none;
+		margin: 0;
+		padding: 5px 0;
+		position: absolute;
+		top: 40px;
+		left: 0;
+		z-index: 50;
+		overflow: visible;
+		background: #f4f4f4;
+		width: 100%;
+		min-width: 180px;
+		border-radius: 4px;
+		visibility: hidden;
+		opacity: 0;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		transition: opacity .3s ease-out, visibility .3s ease-out, top .3s ease-out, bottom .3s ease-out;
+
+		&:after {
+			bottom: 100%;
+			right: 20px;
+			border: solid transparent;
+			content: "";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: transparent;
+			border-bottom-color: #f4f4f4;
+			border-width: 6px;
+			margin-left: -6px;
+		}
+
+		&.fs-open {
+			visibility: visible;
+			top: 50px;
+			opacity: 1;
+		}
+
+		li {
+			padding: 6px 12px;
+			margin: 0;
+			color: #9a9a9a;
+			cursor: pointer;
+			white-space: nowrap;
+			transition: all 0.2s ease-out;
+			font-style: italic;
+			font-size: 13px;
+
+			&.fs-selected {
+				background: $highlight_color;
+				color: #fff;
+			}
+
+			&.fs-hover {
+				background: $highlight_color;
+				color: #fff;
+			}
+
+			&.fs-optgroup {
+				cursor: default;
+				padding: 10px 0 0 0;
+
+				span {
+					padding-left: 10px;
+					display: block;
+					font-style: italic;
+					opacity: 0.8;
+				}
+
+			}
+		}
+
+	}
+
+	ul.fs-optgroup {
+		list-style: none;
+		padding: 5px 0 0 0;
+
+		li {
+			padding-left: 30px;
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+}
+

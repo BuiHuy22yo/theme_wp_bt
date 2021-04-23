@@ -1,0 +1,164 @@
+.products {
+	.product {
+		margin-bottom: 50px;
+
+		&:hover {
+			.product-buttons {
+				opacity: 1;
+				visibility: visible;
+
+				.gssiacs-quickview {
+					transform: translateX(0);
+				}
+
+				.gssiacs-add-to-cart {
+					transform: translateX(0);
+				}
+			}
+		}
+
+		.product-image {
+			position: relative;
+
+			.onsale {
+				position: absolute;
+				font-size: 28px;
+				color: #fff;
+				background: #f9a392;
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				z-index: 1;
+				right: 20px;
+				top: 20px;
+				text-align: center;
+				line-height: 60px;
+			}
+		}
+
+		.product-buttons {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			display: flex;
+			width: 100%;
+			align-items: center;
+			opacity: 0;
+			visibility: hidden;
+			overflow: hidden;
+
+			> div {
+				width: calc(50% - 0.5px);
+				background: $highlight_color;
+				padding: 8px 0;
+				text-align: center;
+				transition: transform 0.3s ease-in;
+
+				a {
+					font-size: 10px;
+					color: #fff;
+					text-transform: uppercase;
+				}
+
+				&.gssiacs-quickview {
+					transform: translateX(-100%);
+
+					i {
+						margin-left: 5px;
+					}
+				}
+
+				&.gssiacs-add-to-cart {
+					transform: translateX(100%);
+
+					> .button {
+						&.loading {
+							position: relative;
+
+							&:before {
+								position: absolute;
+								font-family: FontAwesome;
+								content: '\f021';
+								animation: spinner 1.5s linear infinite;
+								-webkit-animation: spinner 1.5s linear infinite;
+								right: -15px;
+							}
+						}
+					}
+				}
+			}
+
+			.gssiacs-add-to-cart {
+				margin-left: auto;
+			}
+		}
+
+		.product-data {
+			text-align: center;
+			padding: 0 10px;
+
+			.product-title {
+				font-size: 14px;
+				text-transform: uppercase;
+				margin-top: 5px;
+				margin-bottom: 0;
+
+				a {
+					color: #323232;
+
+					&:hover {
+						color: $highlight_color;
+					}
+				}
+			}
+
+			.price {
+				font-family: $heading_font;
+				color: #323232;
+
+				del {
+					color: #979797;
+				}
+
+				ins {
+					text-decoration: none;
+				}
+			}
+
+			.product-excerpt {
+				display: none;
+			}
+		}
+	}
+
+	&.mode-list {
+		.product {
+			width: 100%;
+
+			.product-inner {
+				display: flex;
+				align-items: center;
+			}
+
+			.product-data {
+				display: inline-block;
+				width: 100%;
+
+				.product-title {
+					font-size: 18px;
+				}
+
+				.product-excerpt {
+					display: block;
+					color: #323232;
+					margin-bottom: 10px;
+				}
+
+				.price {
+					font-family: $body_font;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}

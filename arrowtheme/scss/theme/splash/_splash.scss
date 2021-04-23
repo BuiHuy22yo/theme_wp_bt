@@ -1,0 +1,154 @@
+@mixin banner-path($top ,$width, $height) {
+  position: absolute;
+  background-color: #ffffff;
+  width: $width;
+  height: $height;
+  top: $top;
+}
+
+@mixin banner-description($top, $left, $width, $height, $font_size) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  width: $width;
+  height: $height;
+  text-align: center;
+  font-size: $font_size;
+  line-height: 1.8;
+  color: #ffffff;
+  font-family: Lato;
+}
+
+section.elementor-section-banner{
+  position: relative;
+  border-top: #014d93 solid 20px;
+  .splash-banner {
+    img {
+      position: relative;
+      object-fit: contain;
+      width: 100%;
+    }
+    h1 {
+      @include h1-title;
+      position: absolute;
+      top: 17%;
+      color: #fff;
+      text-align: center;
+      width: 100%;
+    }
+    .banner-path-left, .banner-path-right{
+      @include banner-path(45%, 470px, 380px);
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+      padding:40px;
+      h4.path-title{
+        @include h4-path-title;
+        padding:20px 0px;
+        margin-bottom: 0px;
+      }
+    }
+    .banner-path-left{
+      border-top: $red_top_bar_color solid 2.5px;
+      border-bottom-left-radius: 10%;
+      left: 24%;
+      h4.path-title{
+        color: $red_top_bar_color;
+      }
+      img{
+        max-width: 220px;
+      }
+    }
+    .banner-path-right{
+      border-top: $blue_bar_color solid 2.5px;
+      border-bottom-right-radius: 10%;
+      right: 24%;
+      img{
+        max-width: 220px;
+      }
+      h4.path-title{
+        color: $blue_bar_color;
+      }
+    }
+
+    .banner-description {
+     @include body-p;
+      position: absolute;
+      top: 32%;
+      width:100%;
+      margin-top:20px;
+      text-align: center;
+      color: #ffffff;
+      padding: 10px 0px;
+      padding:20px 0px;
+    }
+  }
+}
+
+section.splash-banner-about{
+  padding:100px 0px;
+  h2 {
+    @include h1-title;
+    color: $color_black;
+  }
+  .mores a{
+    color: $blue_bar_color;
+    padding:30px 0px;
+  }
+  .mores a:hover{
+    color: $a_learnmore_hover;
+  }
+  .mores a:visited{
+    color: $color-background-tint;
+  }
+}
+
+@media only screen and (max-width:1280px) {
+  section.elementor-section-banner{
+    .splash-banner h1{
+      top:10%;
+    }
+    .splash-banner .banner-description{
+      top:27%;
+    }
+    .splash-banner .banner-path-left{
+      left: 13%;
+    }
+    .splash-banner .banner-path-right{
+      right: 13%;
+    }
+    .splash-banner .banner-path-left ,.splash-banner .banner-path-right{
+      width: 440px;
+      height: 330px;
+      padding: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  section.elementor-section-banner{
+    .splash-banner .banner-description{
+      top:52%;
+    }
+   .splash-banner .banner-path-left, .splash-banner .banner-path-right{
+     width: 47%;
+     padding: 30px;
+     float: left;
+     margin: 30px 10px;
+     position: unset;
+    }
+  }
+
+}
+@media only screen and (max-width:600px) {
+  section.elementor-section-banner {
+    .splash-banner .banner-path-left, .splash-banner .banner-path-right{
+      width: 94%;
+      height: auto;
+      margin: 30px 19px;
+      float: left;
+    }
+    .banner-path-right{
+      margin-top: 0px;
+    }
+  }
+
+}

@@ -1,0 +1,17 @@
+.added_to_cart {
+	display: none;
+}
+
+.woocommerce-page #gssiacs-wc-popup-message {
+	color: #fff;
+	background: $highlight_color;
+	border: 0;
+	border-radius: 5px;
+	padding: 15px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	line-height: 50px;
+	text-align: center;
+	z-index: 10000;
+}

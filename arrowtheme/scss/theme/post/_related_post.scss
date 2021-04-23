@@ -1,0 +1,42 @@
+.gssiacs-related-post {
+	> h3 {
+		font-size: 45px;
+		line-height: 60px;
+		padding: 60px 0;
+		text-align: center;
+		border-top: 1px solid #ddd;
+	}
+
+	.related-post-content {
+		.item-post {
+			.item-details {
+				padding: 40px 20px 40px 40px;
+
+				.item-cat {
+					font-size: 12px;
+					color: $theme_color;
+				}
+
+				.item-title {
+					margin-top: 20px;
+					font-size: 18px;
+				}
+
+				.item-date {
+					font-size: 12px;
+					text-transform: uppercase;
+					letter-spacing: 1.2px;
+				}
+
+				.item-button {
+					a {
+						font-size: 12px;
+						letter-spacing: 2.4px;
+						text-transform: uppercase;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}

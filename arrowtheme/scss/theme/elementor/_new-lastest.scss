@@ -1,0 +1,25 @@
+.gssiacs-wrapper{
+  .new-lastest{
+    border-left: 2px solid #159bd7;
+    margin-left: 20px;
+    padding: 40px 20px 40px 40px;
+  }
+  .new-lastest-item-box{
+    display: flex;
+  }
+  .col-4.new-lastest-btn-button-bottom {
+    margin-top: 300px;
+    border-top: 1px solid;
+  }
+  .new-lastest-Heading-H2{
+    text-align: left;
+    margin: 20px 10px 10px 0px;
+  }
+  .new-lastest-item-cat {
+    position: absolute;
+    /* top: -26px; */
+    bottom: 100px;
+    display: flex;
+    margin-left: 15px;
+  }
+}

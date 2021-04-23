@@ -1,0 +1,51 @@
+.gssiacs-post-content {
+	.post-meta {
+		display: block;
+
+		> div {
+			&:after {
+				content: none;
+			}
+		}
+	}
+
+	.post-footer-info {
+		margin-top: 20px;
+	}
+
+	.author-section {
+		margin-top: 20px;
+		padding: 20px;
+
+		.author-info {
+			margin-left: 20px;
+		}
+	}
+
+	.gssiacs-comment-form {
+		padding: 20px;
+	}
+
+	.gssiacs-list-comments {
+		> h3 {
+			margin-bottom: 20px;
+		}
+
+		 .comment-list {
+		 	li {
+		 		.comment-wrap {
+		 			margin-bottom: 20px;
+
+		 			.comment-avatar {
+		 				width: 70px;
+		 			}
+
+		 			.comment-body {
+		 				width: calc(100% - 90px);
+		 				margin-left: 20px;
+		 			}
+		 		}
+		 	}
+		 }
+	}
+}

@@ -1,0 +1,272 @@
+.gssiacs-post-content {
+	.post-meta {
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		position: relative;
+		margin-bottom: 10px;
+
+		> div {
+			margin-right: 10px;
+			position: relative;
+			padding-right: 5px;
+
+			&:after {
+				position: absolute;
+				content: '/';
+				right: -4px;
+			}
+
+			&:last-child {
+				&:after {
+					content: none;
+				}
+			}
+		}
+
+		.term-category {
+			a {
+				margin-left: 3px;
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+
+		a {
+			color: $black_color;
+			font-size: 14px;
+			font-style: italic;
+		}
+	}
+
+	.post-footer-info {
+		display: flex;
+		align-items: center;
+		margin-top: 40px;
+
+		.term-post_tag {
+			font-size: 0;
+
+			a {
+				font-size: 14px;
+				color: $black_color;
+				position: relative;
+				font-weight: 400;
+				margin-right: 5px;
+				padding-right: 5px;
+
+				&:after {
+					position: absolute;
+					content: '|';
+					right: -2px;
+					top: 0;
+				}
+
+				&:last-child {
+					&:after {
+						content: none;
+					}
+				}
+			}
+		}
+
+		.entry-comments-link {
+			margin-left: auto;
+
+			i {
+				color: $highlight_color;
+				margin-right: 3px;
+			}
+		}
+	}
+
+	.author-section {
+		background: rgba(249, 163, 146, 0.2);
+		padding: 23px 55px;
+		display: flex;
+		align-items: center;
+		margin-top: 40px;
+
+		.author-avatar {
+			img {
+				border-radius: 50%;
+			}
+		}
+
+		.author-info {
+			margin-left: 43px;
+
+			.author-title {
+				font-size: 18px;
+				font-family: $body_font;
+				color: $black_color;
+				font-weight: bold;
+				line-height: 24px;
+				margin-bottom: 10px;
+			}
+
+			.author-description {
+				color: $black_color;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.section-comments {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.gssiacs-list-comments {
+		> h3 {
+			color: $black_color;
+			font-size: 18px;
+			font-family: $body_font;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+
+		.comment-list {
+			margin: 0;
+			padding: 0;
+
+			li {
+				list-style: none;
+
+				.comment-wrap {
+					display: flex;
+					align-items: flex-start;
+					margin-bottom: 40px;
+
+					.comment-avatar {
+						img {
+							border-radius: 50%;
+						}
+					}
+
+					.comment-body {
+						margin-left: 75px;
+						font-size: 12px;
+						color: $black_color;
+						font-weight: normal;
+
+						.c-author {
+							font-weight: normal;
+							text-transform: uppercase;
+							font-size: 14px;
+
+							a {
+								color: $black_color;
+							}
+						}
+
+						.c-date {
+							letter-spacing: 1.4px;
+						}
+
+						.comment-reply-link {
+							text-transform: uppercase;
+							font-size: 14px;
+							color: $black_color;
+							letter-spacing: 1.4px;
+							margin-top: 20px;
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.gssiacs-comment-form {
+		background: rgba(249, 163, 146, 0.2);
+		padding: 28px;
+
+		#respond {
+			> h3 {
+				color: $black_color;
+				font-size: 18px;
+				font-family: $body_font;
+				text-transform: uppercase;
+				margin-bottom: 0;
+			}
+		}
+
+		label,
+		a,
+		.comment-notes {
+			color: $black_color;
+			font-size: 12px;
+		}
+
+		textarea {
+			border: none;
+			padding: 30px;
+			font-size: 12px;
+			color: #8d8d8d;
+			width: 100%;
+			box-shadow: none;
+		}
+
+		.comment-form-comment {
+			margin-bottom: 15px;
+		}
+
+		.comment-input {
+			display: flex;
+			align-items: center;
+
+			> p {
+				margin-bottom: 15px;
+				flex-grow: 1;
+
+				&.comment-form-author {
+					input {
+						margin-right: 10px;
+					}
+				}
+
+				&.comment-form-email {
+					input {
+						margin: 0 5px;
+					}
+				}
+
+				&.comment-form-url {
+					input {
+						margin-left: 10px;
+					}
+
+				}
+			}
+
+			input {
+				border: none;
+				height: 40px;
+				padding: 0 10px;
+				font-size: 12px;
+				color: #8d8d8d;
+				width: 100%;
+			}
+		}
+
+		.form-submit {
+			.submit {
+				background: $highlight_color;
+				color: #fff;
+				letter-spacing: 2.8px;
+				text-transform: uppercase;
+				font-family: $heading_font;
+				font-size: 14px;
+				padding: 8px 20px;
+				border: none;
+
+				&:hover {
+					background: $theme_color;
+				}
+			}
+		}
+	}
+}

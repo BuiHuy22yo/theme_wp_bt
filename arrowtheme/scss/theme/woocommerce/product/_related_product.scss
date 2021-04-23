@@ -1,0 +1,22 @@
+.related.products {
+	margin-top: 60px;
+
+	> h2 {
+		font-size: 24px;
+		color: $black_2_color;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+
+	.products-wrapper {
+		.product-inner {
+			display: block;
+
+			.product-data {
+				.price {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.subscript-form {
+	margin: 0 auto;
+	text-align: center;
+
+	input[type="email"] {
+		background: #282824;
+		border: none;
+		height: 50px;
+		min-width: 300px;
+		padding: 0 10px;
+		color: #e8e6e6;
+	}
+
+	input[type="submit"] {
+		background: #909090;
+		border: 1px solid rgba(254, 254, 254, 0.11);
+		height: 48px;
+		padding: 0 20px;
+		color: #292824;
+		font-weight: bold;
+		letter-spacing: 1.4px;
+	}
+}

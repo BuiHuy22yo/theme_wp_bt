@@ -1,0 +1,119 @@
+.gssiacs-site-nav {
+    .main-nav {
+		margin: 0;
+		padding: 0;
+        > .menu-item {
+            display: inline-block;
+			margin: 0 12px;
+			padding: 10px 0px;
+			&:hover {
+				&:after {
+					width: 100%;
+				}
+				&:after {
+					position: absolute;
+					content: '';
+					height: 2px;
+					left: 0;
+					bottom: 0;
+					width: 0;
+					transition: all .2s ease-out;
+					background: $red_top_bar_color;
+				}
+			}
+
+            > a {
+				position: relative;
+				color: $color_black;
+            }
+        }
+
+        li {
+            line-height: 1.5;
+            position: relative;
+            list-style: none;
+        }
+    }
+
+    .menu-item-has-children {
+        > a {
+            position: relative;
+        }
+
+        &:hover {
+            > .sub-menu {
+				opacity: 1;
+				visibility: visible;
+				margin: 0;
+            }
+        }
+    }
+
+    .sub-menu {
+        display: block;
+        min-width: 315px;
+		position: absolute;
+		left: 0;
+		top: 47px;
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+		background: $white_color;
+		z-index: 99;
+		padding: 0px 20px;
+		transition: margin 0.2s ease-in-out, opacity 0.2s ease-in-out, visibility 0.06s ease-in-out;
+		opacity: 0;
+		visibility: hidden;
+		margin: 20px 0 0 0;
+		border-bottom: solid 3px $red_top_bar_color;
+		> li {
+			padding: 15px 0;
+			border-bottom: 1px dotted $black_color;
+			&:hover {
+				> a {
+					color: $blue_bar_color;
+				}
+			}
+			>a{
+				font-family: Roboto;
+				font-size: 18px;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.78;
+				letter-spacing: 0.27px;
+				text-align: left;
+			}
+			&:last-child{
+				border-bottom: 0px;
+			}
+		}
+    }
+	.nav-top-right{
+		text-align: right;
+		> .menu-item {
+			a{
+				color: $white_color;
+			}
+		}
+		.sub-menu {
+			top: 47px;
+			text-align: left;
+			> li {
+				padding: 15px 0;
+				border-bottom: 1px dotted $black_color;
+				&:hover {
+					> a {
+						color: $blue_bar_color;
+					}
+				}
+				a{
+					color: $color_black;
+				}
+			}
+		}
+	}
+}
+.menu-box-list .gssiacs-site-nav{
+	padding-top: 52px;
+}
+
+

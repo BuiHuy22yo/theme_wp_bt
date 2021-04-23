@@ -1,0 +1,39 @@
+section.section-news{
+  padding:100px 0px 150px 0px;
+  background-color: #eff4f9;
+  h2{
+    @include h1-title;
+  }
+  h2 a{
+    @include body-a-move;
+    color: $blue_bar_color;
+    font-family: Roboto;
+    text-align: left;
+    margin-top: 30px;
+    &:hover{
+      color: $a_learnmore_hover;
+    }
+  }
+  .news-down-post {
+    .blog {
+      border-bottom: dotted 0.5px #000000;
+      padding:15px 0px;
+      .news-down-channel{
+        @include body-font-small;
+        a:hover{
+          color: $a_learnmore_hover;
+        }
+      }
+      .news-down-title{
+        @include body-title-20;
+        padding:20px 0px;
+      }
+      .news-down-date{
+        @include body-date-post;
+      }
+    }
+  }
+  .blog.dot {
+    border-top: dotted 0.5px $black_color;
+  }
+}

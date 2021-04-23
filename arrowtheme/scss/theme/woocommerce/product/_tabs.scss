@@ -1,0 +1,257 @@
+.woocommerce-tabs {
+	margin-top: 50px;
+
+	.wc-tabs {
+		margin: 0;
+		padding: 0;
+		margin-bottom: 30px;
+		text-align: center;
+
+		li {
+			list-style: none;
+			display: inline-block;
+			background: $highlight_color;
+			padding: 12px 45px;
+
+			&.active {
+				background: #f48580;
+			}
+
+			a {
+				font-size: 14px;
+				font-family: $heading_font;
+				color: #fff;
+				letter-spacing: 1.4px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.wc-tab {
+		padding: 0 50px 30px;
+		color: #323232;
+		text-align: center;
+
+		> h2 {
+			display: none;
+		}
+	}
+
+	#tab-description {
+		letter-spacing: 1.4px;
+	}
+
+	#tab-reviews {
+		text-align: left;
+
+		#comments {
+			margin-bottom: 20px;
+		}
+
+		.woocommerce-Reviews-title {
+			font-size: 16px;
+			color: #323232;
+			text-transform: uppercase;
+			letter-spacing: 1.6px;
+		}
+
+		.commentlist {
+			margin: 0;
+			padding: 0;
+
+			li {
+				list-style: none;
+
+				.comment_container {
+					display: flex;
+
+					> img {
+						width: 60px;
+						height: 60px;
+						border-radius: 50%;
+					}
+
+					.comment-text {
+						width: calc(100% - 80px);
+						margin-left: 20px;
+
+						.star-rating {
+							margin: 0;
+						}
+
+						.meta {
+							color: #909090;
+							margin-bottom: 5px;
+
+							.woocommerce-review__author {
+								color: $black_2_color;
+								font-weight: normal;
+							}
+						}
+
+						.description {
+							color: #909090;
+						}
+					}
+				}
+			}
+		}
+
+		#review_form_wrapper {
+			.comment-reply-title {
+				font-size: 18px;
+				color: $black_2_color;
+			}
+
+			.amyui-fancy-select {
+				display: none!important;
+			}
+
+			label {
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			.comment-form {
+				.comment-notes {
+					background: rgba(249, 163, 146, 0.5);
+					padding: 10px 20px;
+					margin: 15px 0 25px;
+				}
+
+				> p {
+					margin-bottom: 20px;
+
+					&.comment-form-cookies-consent {
+						input {
+							width: auto;
+						}
+
+						label {
+							display: inline-block;
+						}
+					}
+
+					&.form-submit {
+						.submit {
+							width: auto;
+							padding: 10px 40px;
+							background: $highlight_color;
+							font-size: 18px;
+							color: #fff;
+							text-transform: uppercase;
+							letter-spacing: 1.8px;
+							font-weight: bold;
+						}
+					}
+				}
+
+				input,
+				textarea {
+					background: rgba(252, 209, 200, 0.2);
+					border: none;
+					width: 100%;
+					padding: 10px;
+				}
+			}
+
+			.stars {
+				a {
+					border-right: 1px solid #e1e1e1;
+					margin-right: 1em;
+					position: relative;
+					text-indent: -9999em;
+					width: 1em;
+					height: 1em;
+					display: inline-block;
+					color: #333;
+
+					&:before {
+						font-family: FontAwesome;
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 1em;
+						height: 1em;
+						line-height: 1;
+						text-indent: 0;
+					}
+
+					&.active {
+						color: $highlight_color;
+					}
+
+					&.star-1 {
+						width: 2em;
+
+						&:before {
+							content: '\f006';
+						}
+
+						&.active {
+							&.before {
+								content: '\f005';
+							}
+						}
+					}
+
+					&.star-2 {
+						width: 3em;
+
+						&:before {
+							content: '\f006\f006';
+						}
+
+						&.active {
+							&.before {
+								content: '\f005\f005';
+							}
+						}
+					}
+					&.star-3 {
+						width: 4em;
+
+						&:before {
+							content: '\f006\f006\f006';
+						}
+
+						&.active {
+							&.before {
+								content: '\f005\f005\f005';
+							}
+						}
+					}
+
+					&.star-4 {
+						width: 5em;
+
+						&:before {
+							content: '\f006\f006\f006\f006';
+						}
+
+						&.active {
+							&.before {
+								content: '\f005\f005\f005\f005';
+							}
+						}
+					}
+
+					&.star-5 {
+						width: 6em;
+
+						&:before {
+							content: '\f006\f006\f006\f006\f006';
+						}
+
+						&.active {
+							&.before {
+								content: '\f005\f005\f005\f005\f005';
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

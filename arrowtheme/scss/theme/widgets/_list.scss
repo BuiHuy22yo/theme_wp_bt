@@ -1,0 +1,41 @@
+.gssiacs-widget-list {
+	.gssiacs-widget-list-content {
+		img {
+			width: 70px;
+		}
+
+		.entry-item {
+			display: flex;
+			margin-bottom: 15px;
+
+			.item-image {
+				width: 70px;
+			}
+
+			.entry-content {
+				width: calc(100% - 85px);
+				margin-left: 15px;
+
+				.entry-title {
+					font-size: 16px;
+					font-family: $body_font;
+					line-height: 20px;
+					margin-bottom: 0;
+
+					a {
+						color: $black_color;
+
+						&:hover {
+							color: $link_color_hover;
+						}
+					}
+				}
+
+				.entry-meta {
+					font-size: 12px;
+					color: $black_color;
+				}
+			}
+		}
+	}
+}

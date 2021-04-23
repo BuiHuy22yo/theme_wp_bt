@@ -1,0 +1,121 @@
+.gssiacs-icon-cart {
+	position: relative;
+
+	&:hover {
+		.gssiacs-cart-content {
+			visibility: visible;
+			opacity: 1;
+			height: auto;
+			padding: 20px;
+		}
+	}
+
+	.gssiacs-cart-content {
+		display: block;
+		position: absolute;
+		background: #fff;
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+		border-top: 2px solid #151a45;
+		min-width: 280px;
+		padding: 0px;
+		right: 0;
+		transition: all .2s ease;
+		visibility: hidden;
+  		opacity: 0;
+  		height: 0;
+
+		.woocommerce-mini-cart {
+			margin: 0;
+			padding: 0;
+
+			li {
+				list-style: none;
+				position: relative;
+				display: flex;
+				margin-bottom: 15px;
+
+				.remove {
+					position: absolute;
+					z-index: 99;
+					top: 0;
+					left: 5px;
+					font-weight: bold;
+					font-size: 20px;
+				}
+
+				.product-image {
+					img {
+						width: 70px;
+					}
+				}
+
+				.product-data {
+					margin-left: 15px;
+					width: calc(100% - 70px);
+				}
+
+				.product-title {
+					font-size: 12px;
+					text-transform: uppercase;
+					font-weight: bold;
+					line-height: 18px;
+
+					a {
+						color: $black_color;
+
+						&:hover {
+							color: $link_color_hover;
+						}
+					}
+				}
+
+				.quantity {
+					font-weight: bold;
+					color: $black_color;
+
+					.amount {
+						color: $highlight_color;
+					}
+				}
+			}
+		}
+
+		.woocommerce-mini-cart__total {
+			border-top: 1px dashed #151a45;
+			text-align: center;
+			padding-top: 15px;
+			font-size: 16px;
+			text-transform: capitalize;
+			color: $black_2_color;
+			font-weight: bold;
+
+			.woocommerce-Price-amount {
+				color: $highlight_color;
+			}
+		}
+
+		.woocommerce-mini-cart__buttons {
+			a {
+				border: 1px solid #151a45;
+				font-size: 12px;
+				font-weight: bold;
+				text-transform: uppercase;
+				border-radius: 20px;
+				text-align: center;
+				height: 35px;
+				line-height: 35px;
+				width: calc(50% - 5px);
+
+				&.checkout {
+					margin-left: 10px;
+				}
+			}
+		}
+
+		.woocommerce-mini-cart__empty-message {
+			color: #2a2d2c;
+		}
+
+
+	}
+}

@@ -1,0 +1,30 @@
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	font-size: 0;
+	background: transparent;
+	border: none;
+
+	&:after {
+		font-family: FontAwesome;
+		content: '';
+		font-size: 15px;
+		color: $theme_color;
+	}
+
+	&.slick-prev {
+		left: -35px;
+
+		&:after {
+			content: '\f060';
+		}
+	}
+
+	&.slick-next {
+		right: -35px;
+
+		&:after {
+			content: '\f061';
+		}
+	}
+}

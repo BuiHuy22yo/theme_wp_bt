@@ -1,0 +1,37 @@
+.woocommerce-product-gallery {
+	position: relative;
+	display: flex;
+
+	.woocommerce-product-gallery__trigger {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		z-index: 1;
+		font-size: 0;
+
+		&:before {
+			font-family: FontAwesome;
+			content: '\f002';
+			font-size: 20px;
+			color: $highlight_color;
+		}
+	}
+
+	.flex-control-nav {
+		order: 1;
+		width: 100px;
+		margin: 0;
+		margin-right: 20px;
+		padding: 0;
+
+		li {
+			list-style: none;
+			margin-bottom: 20px;
+		}
+	}
+
+	.flex-viewport {
+		order: 2;
+		width: calc(100% - 120px);
+	}
+}

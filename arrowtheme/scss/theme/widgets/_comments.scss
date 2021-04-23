@@ -1,0 +1,18 @@
+.widget_recent_comments {
+	#recentcomments {
+		.recentcomments {
+			text-transform: none;
+			letter-spacing: normal;
+			font-size: 14px;
+			margin-bottom: 5px;
+
+			a {
+				color: $highlight_color;
+
+				&:hover {
+					color: $black_color;
+				}
+			}
+		}
+	}
+}

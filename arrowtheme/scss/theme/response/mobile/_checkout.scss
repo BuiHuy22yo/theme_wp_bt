@@ -1,0 +1,31 @@
+.woocommerce-checkout {
+	form.checkout {
+		h3 {
+			font-size: 16px;
+		}
+
+		#customer_details {
+			display: block;
+
+			> div {
+				width: 100%;
+			}
+
+			.col-2 {
+				margin-left: 0;
+			}
+		}
+
+		#ship-to-different-address {
+			input#ship-to-different-address-checkbox {
+				margin-right: 15px;
+				width: 15px;
+				height: 15px;
+			}
+		}
+	}
+
+	table {
+		width: 100%;
+	}
+}

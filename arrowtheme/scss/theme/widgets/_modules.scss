@@ -1,0 +1,21 @@
+.gssiacs-widget-modules {
+	.item-module {
+		border-bottom: 1px solid #ddd;
+		font-size: 12px;
+		color: $black_color;
+		display: flex;
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+		align-items: center;
+
+		.item-title {
+			width: 40%;
+		}
+
+		.item-desc {
+			margin-left: auto;
+			width: 60%;
+			text-align: right;
+		}
+	}
+}

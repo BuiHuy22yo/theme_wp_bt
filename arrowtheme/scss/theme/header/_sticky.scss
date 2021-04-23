@@ -1,0 +1,35 @@
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+	transform: translateY(-100%);
+}
+
+.headroom--pinned.headroom--not-top {
+	display: block;
+	position: fixed;
+	top: 0;
+	background: #000;
+	z-index: 999;
+	width: 100%;
+
+	#gssiacs-site-logo {
+		.gssiacs-logo-sticky {
+			display: block;
+		}
+
+		.gssiacs-logo {
+			display: none;
+		}
+	}
+}
+
+.headroom--unpinned {
+    display: none;
+}

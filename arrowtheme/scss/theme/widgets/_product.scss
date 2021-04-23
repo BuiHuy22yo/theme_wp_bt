@@ -1,0 +1,48 @@
+.widget_products {
+	.product_list_widget {
+		li {
+			display: flex;
+			margin-bottom: 15px;
+
+			.item-image {
+				width: 70px;
+			}
+
+			.item-content {
+				width: calc(100% - 85px);
+				margin-left: 15px;
+
+				.item-title {
+					font-size: 14px;
+					letter-spacing: normal;
+					text-transform: capitalize;
+
+					a {
+						color: $black_color;
+
+						&:hover {
+							color: $link_color_hover;
+						}
+					}
+				}
+
+				.star-rating {
+					margin: 0;
+					font-size: 10px;
+					width: 59px;
+				}
+
+				.item-price {
+					font-size: 14px;
+					color: $black_color;
+					letter-spacing: normal;
+
+					ins {
+						text-decoration: none;
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+	}
+}

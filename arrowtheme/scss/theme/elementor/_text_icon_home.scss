@@ -1,0 +1,80 @@
+.red-tint {
+  position: relative;
+  display: flex;
+  height: 590px;
+  padding: 0px;
+  .Path-1728, .Path-1729, .Path-1730, .Path-1731 {
+      display: flex;
+      z-index: 2;
+      position: absolute;
+      width: 330px;
+      height:290px;
+      padding: 45px;
+      background-color: #FFFFFF;
+      border-style: solid;
+      border-width: 12px;
+  }
+  .Path-1728 {
+    top: -21%;
+    right: 27%;
+    border-color: #e21936;
+    border-radius: 30px 30px 0px 30px;
+  }
+
+  .Path-1729 {
+    top: -14%;
+    right: -10%;
+    border-color: #014d93;
+    border-radius: 30px 30px 30px 0px;
+  }
+  .Path-1730 {
+    top: 31%;
+    right: 27%;
+    border-color: #6794be;
+    border-radius: 30px 0px 30px 30px;
+  }
+   .Path-1731 {
+     top: 38%;
+     right: -10%;
+     border-color: #E21936;
+     border-radius: 0px 30px 30px 30px;
+  }
+}
+section.about-content {
+  margin-top: 200px;
+  .red-tint {
+    position: relative;
+    display: flex;
+    height: 590px;
+    padding:0px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .red-tint{
+    .Path-1728, .Path-1729, .Path-1730, .Path-1731 {
+      width: 270px;
+      height:230px;
+      padding: 24px;
+    }
+  }
+
+  .red-tint .Path-1728 {
+    top: -22%;
+    right: 34%;
+  }
+  .red-tint .Path-1729 {
+    top: -10%;
+    right: -12%;
+  }
+  .red-tint .Path-1730 {
+    top: 20%;
+    right: 34%;
+  }
+  .red-tint .Path-1731 {
+    top: 32%;
+    right: -12%;
+  }
+}
+
+

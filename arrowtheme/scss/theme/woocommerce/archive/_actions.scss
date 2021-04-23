@@ -1,0 +1,27 @@
+.shop-actions {
+	display: flex;
+	align-items: center;
+	margin: 0 0 20px;
+
+	.shop-action-left {
+		display: flex;
+		align-items: center;
+
+		.woocommerce-result-count {
+			margin-bottom: 0;
+			margin-left: 10px;
+			color: #9a9a9a;
+			font-style: italic;
+		}
+
+		.woocommerce-view-mode {
+			a {
+				color: $highlight_color;
+			}
+		}
+	}
+
+	.shop-action-right {
+		margin-left: auto;
+	}
+}

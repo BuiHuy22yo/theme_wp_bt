@@ -1,0 +1,103 @@
+section.section-singup {
+  display: block;
+  position: relative;
+  padding-bottom: 130px;
+  .newsletter-signup {
+    .colour-block {
+      background-color: $blue_bar_color;
+      height: 375px;
+      border-radius: 0 100px 0 0;
+      z-index: 1;
+      position: relative;
+      margin-top: -100px;
+      margin-left: -15px;
+      .content {
+        width: 890px;
+        margin: 0 auto;
+        padding-left: 100px;
+        h2.Heading-H2 {
+          font-size: 50px;
+          font-weight: 900;
+          line-height: 1.2;
+          font-family: 'Lato';
+          padding-top: 100px;
+          letter-spacing: 1.25px;
+          color: #fff;
+          text-align: left;
+        }
+
+        .Rectangle-573 {
+          width: 260px;
+          margin-top: -80px;
+          margin-left: 55%;
+          padding: 8px 0;
+          padding: -6px 5px;
+          border-radius: 23px;
+          box-shadow: 1px 1.5px 0 0 rgba(0, 0, 0, 0.16);
+          border: solid 0.8px #fff;
+
+          p {
+            color: #fff;
+            font-size: 22px;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 0;
+          }
+        }
+
+        .subscribe {
+          font-size: 22px;
+          font-weight: normal;
+          line-height: 1.82;
+          font-family: 'Roboto';
+          margin: 40px 0 0 0;
+          letter-spacing: 1px;
+          color: #fff;
+          text-align: left;
+        }
+
+      }
+
+    }
+
+    .item-image {
+      position: absolute;
+      z-index: 0;
+      top: -2%;
+      right: -6%;
+      width: 626px;
+    }
+  }
+}
+
+
+@media only screen and (max-width:768px) {
+  section.section-singup{
+    padding-bottom: 50px;
+  }
+  section.section-singup .newsletter-signup .colour-block{
+    margin-left: 0px;
+    margin-bottom: 30px;
+    .content{
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  section.section-singup .newsletter-signup .item-image{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  section.section-singup .newsletter-signup .colour-block{
+    height: auto;
+    padding-bottom: 30px;
+  }
+  section.section-singup .newsletter-signup .colour-block .content h2.Heading-H2{
+    padding-top: 60px;
+  }
+  section.section-singup .newsletter-signup .colour-block .content .Rectangle-573{
+    margin: 0;
+  }
+}

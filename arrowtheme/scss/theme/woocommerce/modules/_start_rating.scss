@@ -1,0 +1,36 @@
+.star-rating {
+	overflow: hidden;
+	font-size: 15px;
+	line-height: 20px;
+	position: relative;
+	font-family: FontAwesome;
+	height: 20px;
+	width: 70px;
+	margin: 0 auto;
+
+	&:before {
+		color: #eaeaea;
+		content: "\f005\f005\f005\f005\f005";
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+
+	span {
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: $highlight_color;
+		padding-top: 1.5em;
+
+		&:before {
+			position: absolute;
+			content: "\f005\f005\f005\f005\f005";
+			left: 0;
+			top: 0;
+			text-align: center;
+		}
+	}
+}

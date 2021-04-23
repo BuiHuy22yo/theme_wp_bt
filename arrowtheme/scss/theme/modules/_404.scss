@@ -1,0 +1,47 @@
+.error404 {
+	.gssiacs-page-header {
+		display: none;
+	}
+
+	.gssiacs-404 {
+		background: url("../images/frontend/404.jpg") no-repeat;
+		padding: 100px 0;
+		text-align: center;
+		background-size: cover;
+		min-height: 500px;
+
+		h1 {
+			font-size: 120px;
+			font-family: $body_font;
+			color: $black_color;
+			margin-bottom: 50px;
+		}
+
+		.title {
+			color: #000;
+			font-size: 36px;
+			letter-spacing: 3.6px;
+			margin-bottom: 40px;
+			line-height: 37px;
+		}
+
+		.desc {
+			color: #6a6a6a;
+			font-size: 18px;
+		}
+
+		.btn-home {
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 1.4px;
+			background: $black_2_color;
+			padding: 10px 25px;
+			color: #fff;
+			margin-top: 40px;
+
+			&:hover {
+				background: $theme_color;
+			}
+		}
+	}
+}
